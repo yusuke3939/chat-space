@@ -7,7 +7,6 @@
 |password|string|null: false|
 |password confirmation|string|null: false|
 ### Association
-  has_many :images
 - has_many :messages
   has_many :groups_users
 - has_many :groups, through: :groups_users
