@@ -24,7 +24,7 @@
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|groupname|string|null: false, foreign_key: true|
+|name|string|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
 ### Association
 - has_many :messages
