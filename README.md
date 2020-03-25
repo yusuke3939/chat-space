@@ -36,6 +36,7 @@
 |------|----|-------|
 |name|string|null: false, foreign_key: true|
 ### Association
+  has_many :images
 - has_many :messages
 - has_many  :users, through: :groups_users
 
