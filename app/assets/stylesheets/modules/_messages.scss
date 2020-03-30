@@ -17,12 +17,12 @@
     display: flex;
     align-items: center;
   }
-  .group {
+  .groups {
     height: calc(100vh - 100px);
     background-color: #2f3e51;
-    .group__box {
+    padding: 20px;
+    .groups__list {
       height: 65px;
-      padding: 20px;
       margin-bottom: 20px;
       font-weight: bold;
       &__name {
