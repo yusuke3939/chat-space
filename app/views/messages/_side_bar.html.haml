@@ -8,7 +8,7 @@
         = link_to edit_user_path(current_user), class: "edit__btn" do
           = icon('fas', 'cog')
         %li.top-items__icons__create__btn
-        = link_to "#", class: "create__btn" do
+        = link_to new_group_path(current_user), class: "create__btn" do
           = icon('fas','edit')
   .group
     .group__box
