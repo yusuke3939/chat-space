@@ -1,0 +1,19 @@
+.side-bar
+  .header-left
+    .top-items
+      %p.top-items__name
+        masa
+      %ul.top-items__icons
+        %li.top-items__icons__edit__btn
+        = link_to "#", class: "edit__btn" do
+          = icon('fas', 'cog')
+        %li.top-items__icons__create__btn
+        = link_to "#", class: "create__btn" do
+          = icon('fas','edit')
+  .group
+    .group__box
+      %p.group__box__name
+        aaaa
+      %p.group__box__message
+        メッセージなし
+
