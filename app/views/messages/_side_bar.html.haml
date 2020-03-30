@@ -12,8 +12,11 @@
           = icon('fas','edit')
   .groups
     .groups__list
-      %p.groups__list__name
-        aaaa
-      %p.groups__list__message
-        メッセージなし
+      - current_user.groups.each do |group|
+        .group
+          = link_to '#' do
+            %p.group__name
+              = group.name
+            %p.group__message
+              メッセージなし
 

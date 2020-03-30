@@ -23,16 +23,19 @@
     padding: 20px;
     .groups__list {
       height: 65px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
       font-weight: bold;
-      &__name {
-        margin-bottom: 5px;
-        font-size: 15px;
-        color: $whiteColor;
-      }
-      &__message {
-        font-size: 11px;
-        color: $whiteColor;
+      .group {
+        &__name {
+          margin-bottom: 5px;
+          font-size: 15px;
+          color: $whiteColor;
+        }
+        &__message {
+         font-size: 11px;
+         color: $whiteColor;
+         margin-bottom: 40px;
+        }
       }
     }
   }
