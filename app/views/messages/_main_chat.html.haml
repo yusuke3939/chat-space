@@ -1,0 +1,32 @@
+.chat
+  .main-header
+    .left-box
+      .left-box__current-group
+        ggg
+      %ul.left-box__member-list
+        lll :  
+        %li.left-box__member-list__member
+          mmm
+    .right-box
+      .right-box__edit
+      = link_to "#", class: "create__btn" do
+        Edit
+  .chat__main
+    .chat__box
+      .chat__details
+        %p.chat__details__name
+          ysuk
+        %p.chat__details__date
+          2019/04/25
+      %p.chat__box__message
+        message
+  %form.chat__form
+    .form__box
+      .form__text-area
+        %input.form__text-area__input{placeholder: "type a message"}
+        %label.form__text-area__image
+          = icon('far', 'image')
+          %input{type: "file", class: "image__file"}
+      .form__box__send-btn
+      = link_to "#", class: "send__btn" do
+        Send
