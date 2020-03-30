@@ -10,10 +10,13 @@
         %li.top-items__icons__create__btn
         = link_to new_group_path(current_user), class: "create__btn" do
           = icon('fas','edit')
-  .group
-    .group__box
-      %p.group__box__name
-        aaaa
-      %p.group__box__message
-        メッセージなし
+  .groups
+    .groups__list
+      - current_user.groups.each do |group|
+        .group
+          = link_to '#' do
+            %p.group__name
+              = group.name
+            %p.group__message
+              メッセージなし
 
