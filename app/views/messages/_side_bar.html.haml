@@ -2,10 +2,10 @@
   .header-left
     .top-items
       %p.top-items__name
-        masa
+        = current_user.name
       %ul.top-items__icons
         %li.top-items__icons__edit__btn
-        = link_to "#", class: "edit__btn" do
+        = link_to edit_user_path(current_user), class: "edit__btn" do
           = icon('fas', 'cog')
         %li.top-items__icons__create__btn
         = link_to "#", class: "create__btn" do
