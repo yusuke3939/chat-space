@@ -2,11 +2,12 @@
   .main-header
     .left-box
       .left-box__current-group
-        ggg
+        = @group.name
       %ul.left-box__member-list
-        lll
+        Member: 
         %li.left-box__member-list__member
-          mmm
+          - @group.users.each do |user|
+            = user.name
     .right-box
       .right-box__edit
       = link_to "#", class: "create__btn" do
