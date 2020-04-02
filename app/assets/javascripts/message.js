@@ -14,7 +14,7 @@ $(function(){
             </div>
             <div class="lower-message">
               <p class="lower-message__content">
-                ${message.centent}
+                ${message.content}
               </p>
             </div>
             <img src=${message.image} >
