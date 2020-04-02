@@ -54,10 +54,13 @@ $(function(){
     })
     .done(function(data){
       var html = buildHTML(data);
-      console.log(html);
+      $('.messages').append(html);
+      $('form')[0].reset();
+      $('.send__btn').prop('disabled', false);
+      $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
     })
     .fail(function(){
-      console.log("FFF");
-    })
+      alert("メッセージ送信に失敗しました");
+    });
   })
 })
