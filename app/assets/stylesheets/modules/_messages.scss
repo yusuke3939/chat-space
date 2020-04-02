@@ -21,6 +21,7 @@
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 20px;
+    overflow: scroll;
     .groups__list {
       height: 65px;
       margin-bottom: 40px;
@@ -112,6 +113,7 @@
     height: calc(100vh - 190px);
     background-color: #fafafa;
     padding: 46px 40px;
+    overflow: scroll;
     .message {
       width: 100%;
       padding-bottom: 40px;
