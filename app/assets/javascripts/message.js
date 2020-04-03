@@ -3,7 +3,7 @@ $(function(){
       function buildHTML(message){
         if ( message.image ) {
           var html = 
-          `<div class="message">
+          `<div class="message" data-message-id=${message.id}>
             <div class="upper-message">
               <div class="upper-message__user-name">
                 ${message.user_name}
@@ -22,7 +22,7 @@ $(function(){
         return html;
         } else {
           var html =
-            `<div class="message">
+            `<div class="message" data-message-id=${message.id}>
               <div class="upper-message">
                 <div class="upper-message__user-name">
                   ${message.user_name}
@@ -73,7 +73,11 @@ $(function(){
       data: {id: last_message_id}
     })
     .done(function(messages) {
-      console.log('success');
+      var insertHTML = '';
+      $.each(messages, function(i, message) {
+        insertHTML += buildHTML(message)
+      });
+      $('.messages').append(insertHTML);
     })
     .fail(function() {
       alert('error');
